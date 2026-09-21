@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventHub | Event Announcements</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><span>⚡</span> EventHub</div>
+    <div class="nav-links">
+      <a href="#events">Events</a>
+      <a href="#subscribe">Subscribe</a>
+      <a href="#create">Create Event</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">☁️ AWS SERVERLESS</span>
+      <h1>Never Miss an <span>Important Event.</span></h1>
+      <p>Stay updated with the latest events and receive instant announcements directly in your inbox.</p>
+      <div class="hero-buttons">
+        <a href="#events" class="primary-btn">Explore Events →</a>
+        <a href="#subscribe" class="secondary-btn">Get Notifications</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="section">
+    <div class="section-heading">
+      <span class="section-label">UPCOMING EVENTS</span>
+      <h2>What's happening?</h2>
+      <p>Discover upcoming events and important announcements.</p>
+    </div>
+    <div class="event-grid">
+      <div class="event-card"><div class="event-icon">🚀</div><div class="event-content">
+        <span class="event-tag">HACKATHON</span><h3>SRINATHON 3.0</h3>
+        <div class="event-info">📅 6 November 2026</div><div class="event-info">📍 SIT Mangaluru</div>
+        <p>A 24-hour inter-college technical hackathon where students build innovative solutions.</p>
+      </div></div>
+      <div class="event-card"><div class="event-icon">💡</div><div class="event-content">
+        <span class="event-tag">WORKSHOP</span><h3>Cloud Computing Workshop</h3>
+        <div class="event-info">📅 Coming Soon</div><div class="event-info">📍 SIT Mangaluru</div>
+        <p>Learn practical cloud computing concepts and build applications using AWS services.</p>
+      </div></div>
+      <div class="event-card"><div class="event-icon">🎯</div><div class="event-content">
+        <span class="event-tag">TECH EVENT</span><h3>Innovation Meetup</h3>
+        <div class="event-info">📅 Coming Soon</div><div class="event-info">📍 Mangaluru</div>
+        <p>Connect with students, developers and innovators to explore new ideas.</p>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="subscribe" class="subscribe-section">
+    <div class="subscribe-container">
+      <div class="subscribe-text">
+        <span class="section-label">STAY UPDATED</span>
+        <h2>Get event announcements in your inbox.</h2>
+        <p>Subscribe with your email address and receive notifications whenever a new event is announced.</p>
+      </div>
+      <div class="form-card">
+        <form id="subscribeForm">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+          <button type="submit" class="primary-btn">Subscribe</button>
+        </form>
+        <div id="subscribeMessage" class="message"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="create" class="section create-section">
+    <div class="section-heading">
+      <span class="section-label">ADMIN</span>
+      <h2>Create a New Event</h2>
+      <p>Publish a new event announcement to all subscribers.</p>
+    </div>
+    <div class="create-card">
+      <form id="eventForm">
+        <div class="form-group"><label for="title">Event Name</label><input type="text" id="title" placeholder="Example: SRINATHON 3.0" required></div>
+        <div class="form-row">
+          <div class="form-group"><label for="date">Date</label><input type="text" id="date" placeholder="6 November 2026" required></div>
+          <div class="form-group"><label for="location">Location</label><input type="text" id="location" placeholder="SIT Mangaluru" required></div>
+        </div>
+        <div class="form-group"><label for="description">Description</label><textarea id="description" rows="5" placeholder="Describe your event..."></textarea></div>
+        <button type="submit" class="primary-btn">Publish Event 🚀</button>
+      </form>
+      <div id="eventMessage" class="message"></div>
+    </div>
+  </section>
+
+  <section class="architecture">
+    <div class="section-heading">
+      <span class="section-label">POWERED BY AWS</span>
+      <h2>Serverless Architecture</h2>
+      <p>Built using scalable AWS cloud services.</p>
+    </div>
+    <div class="architecture-grid">
+      <div class="architecture-item"><strong>Amazon S3</strong><span>Static Website</span></div>
+      <div class="architecture-item"><strong>API Gateway</strong><span>HTTP APIs</span></div>
+      <div class="architecture-item"><strong>AWS Lambda</strong><span>Serverless Backend</span></div>
+      <div class="architecture-item"><strong>Amazon SNS</strong><span>Email Notifications</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">⚡ EventHub</div>
+    <p>Serverless Event Announcement System</p>
+    <p class="copyright">Built with AWS • S3 • Lambda • API Gateway • SNS</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
